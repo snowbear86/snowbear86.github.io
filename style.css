@@ -1,0 +1,430 @@
+body {
+  background-color: #161616;
+  }
+
+header{
+  width: 100%;
+  background-color: black;
+
+}
+
+#icon-header{
+width: 10%;
+}
+
+
+#main-header{
+  /* float: right; */
+  color: gray;
+  text-align: center;
+  font-family: 'proxima-nova', sans-serif;
+	font-size: 18px;
+	font-size: 3rem;
+  font-weight: 300;
+  padding-top: 15px;
+  text-transform: uppercase;
+  }
+
+
+  /* TEST */
+
+
+/* 
+=====
+EFFECT FADING OUT FOR SIBLINGS MENU OPTIONS 
+=====
+*/
+
+.menu:hover .menu__link:not(:hover){
+  color: #666666;
+}
+
+/* 
+=====
+MENU STYLES
+=====
+*/
+
+/* core styles */
+
+.icon{
+width: auto;
+height: 30px;
+}
+  
+
+.menu__list{
+  display: flex;  
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none; 
+  width: 450px;
+ 
+}
+
+.menu__group{
+  flex-grow: 1;
+}
+
+.menu__link{
+  display: block;
+}
+
+/* skin */
+
+.menu{
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.menu__link{
+  padding: 2rem 1.5rem;
+
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* states */
+.menu__link:focus{
+  outline: 2px solid #fff;
+}
+
+/* hover animation */
+
+.menu__link{
+  position: relative;
+  overflow: hidden;
+  
+  will-change: color;
+  transition: color .25s ease-out;  
+}
+
+.menu__link::before, 
+.menu__link::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.menu__link::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.menu__link::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.menu__link:hover::before, 
+.menu__link:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
+/*
+=====
+DEMO
+=====
+*/
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 70%;
+  }
+}
+
+body{
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem; */
+  margin: 0;
+  /* min-height: 100vh; */
+  /* display: flex;    */
+  /* flex-direction: column; */
+}
+
+.page{
+  box-sizing: border-box;
+  /* max-width: 640px; */
+  width: 100%;  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  order: 1;
+  margin: auto;
+}
+
+
+
+  /* TEST^^^ */
+
+#login-header{
+  color: #1DB954;
+  font-family: 'proxima-nova', sans-serif;
+	font-size: 18px;
+	font-size: 2.5rem;
+  font-weight: 300;
+
+}
+
+#login-box{
+  text-align: center;
+  align-content: inherit ;
+  margin-left: 400px;
+  margin-top: 50px;
+  width: 40%;
+  padding-bottom: 50px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* padding: 0 50px; */
+	height: 100%;
+	text-align: center;
+}
+.l_button {
+	border-radius: 5px;
+	border: 1px solid #1DB954;
+	background-color: #1DB954;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+  padding: 12px 45px;
+  margin: 10px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  /* transition: transform 80ms ease-in; */
+  transition:all .3s ease-out; 
+
+}
+
+.l_button:hover{
+  color: black;
+}
+
+
+
+
+
+
+
+h2 {
+    color: #1DB954;
+    font-family: 'proxima-nova', sans-serif;
+	font-size: 18px;
+	font-size: 2.5rem;
+    font-weight: 300;
+    padding-left: 180px;
+  }
+
+ol{
+      padding-left: 200px;
+  }
+li{
+
+    color: #1DB954;
+    font-family: 'proxima-nova', sans-serif;
+	font-size: 18px;
+	font-size: 2rem;
+    font-weight: 300;
+    padding-left: 50px;
+  }
+
+/* img{
+    height: 70px;
+    width: 70px;
+} */
+button {
+  border-radius: 5px;
+
+  height: 50px;
+  display: inline-block;
+  margin-right: auto;
+  vertical-align: top;
+  background-color: #1DB954;
+  outline:0; 
+  font-size:1em;
+  font-weight:600;
+  border:none;
+  padding:1em;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #000000,
+    2px 2px 0 0 #000000,
+    3px 3px 0 0 #000000,
+    4px 4px 0 0 #000000,
+    5px 5px 0 0 #000000,
+    6px 6px 0 0 #000000,
+    7px 7px 0 0 #000000,
+    8px 8px 0 0 #000000,
+    9px 9px 0 0 #000000,
+    10px 10px 0 0 #000000,
+    11px 11px 0 0 #000000,
+    12px 12px 0 0 #000000;
+}
+button:active{
+  color:#222;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #000000,
+    2px 2px 0 0 #000000,
+    3px 3px 0 0 #000000,
+    4px 4px 0 0 #000000,
+    5px 5px 0 0 #000000;
+
+}
+
+li button {
+  height: 30px;
+  width: 45px;
+  display: inline-block;
+  margin-right: auto;
+  vertical-align: top;
+  background-color: #1DB954;
+  outline:0; 
+  font-size:10px;
+  font-weight:400;
+  border:none;
+  padding:5px;
+  margin: 10px;
+  transition:all .3s ease-out; 
+  box-shadow:inset 0 -8px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #000000,
+    2px 2px 0 0 #000000,
+    3px 3px 0 0 #000000,
+    4px 4px 0 0 #000000,
+    5px 5px 0 0 #000000,
+    6px 6px 0 0 #000000,
+    7px 7px 0 0 #000000,
+    8px 8px 0 0 #000000,
+    9px 9px 0 0 #000000,
+    10px 10px 0 0 #000000,
+    11px 11px 0 0 #000000,
+    12px 12px 0 0 #000000;
+}
+
+li button:active{
+  color:#222;
+  box-shadow:inset 0 -4px 0 0 rgba(0,0,0,.2),
+    1px 1px 0 0 #000000,
+    2px 2px 0 0 #000000,
+    3px 3px 0 0 #000000,
+    4px 4px 0 0 #000000,
+    5px 5px 0 0 #000000;
+
+}
+
+button:hover{
+  color:rgb(100, 100, 100);
+}
+
+#song-name {
+  padding-left: 50px;
+  background-color: rgb(149, 207, 138);
+  width: 300px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #1DB954;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+#band-name {
+  padding-left: 50px;
+  background-color: rgb(149, 207, 138);
+  width: 300px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #1DB954;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+#song-name:focus{
+  outline-color: #1DB954;
+}
+
+#input-box{
+  padding-left: 180px;
+}
+
+#rating{
+  padding-left: 50px;
+  background-color: rgb(149, 207, 138);
+  /* font-family: inherit; */
+  width: 150px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #1DB954;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+#bands-div{
+  float: right;
+  padding-right: 100px;
+}
+
+#songs-div{
+  float: left;
+}
+
+/* #plays{
+  color: #FFFFFF;
+}
+
+#ratingEl{
+  font-size: 50px;
+} */
+
+#newInputBox{
+  float: right;
+}
+
+input {
+  padding-left: 50px;
+  background-color: rgb(149, 207, 138);
+  width: 220px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 2rem;
+  color: #1DB954;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin: 5px;
+}
+
